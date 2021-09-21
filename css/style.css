@@ -1,0 +1,51 @@
+#pad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 300px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+}
+
+#signatures{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+canvas{
+    width: 60%;
+    height: 100%;
+}
+
+body{
+    background-color: gray;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #signatures{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  canvas{
+      width: 100%;
+  }
+}
+
+
+
